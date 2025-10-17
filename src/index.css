@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sophisticated Accounting Firm Design System - Luxury Black, Silver, Gold Theme */
+
+@layer base {
+  :root {
+    /* Light Mode - Elegant Silver Base */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
+
+    /* Premium Gold Primary */
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Sophisticated Silver */
+    --secondary: 0 0% 75%;
+    --secondary-foreground: 0 0% 8%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Elegant Accent */
+    --accent: 43 74% 49%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 43 74% 49%;
+
+    --radius: 0.75rem;
+
+    /* Premium Color Palette */
+    --luxury-black: 0 0% 5%;
+    --luxury-silver: 0 0% 75%;
+    --luxury-gold: 43 74% 49%;
+    --luxury-gold-light: 43 74% 65%;
+    --luxury-gold-dark: 43 74% 35%;
+
+    /* Elegant Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(43 74% 49%) 0%, hsl(43 74% 35%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 75%) 0%, hsl(0 0% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 15%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(43 74% 49%) 100%);
+
+    /* Sophisticated Shadows */
+    --shadow-luxury: 0 20px 60px -15px hsl(0 0% 0% / 0.3);
+    --shadow-gold: 0 10px 40px -10px hsl(43 74% 49% / 0.4);
+    --shadow-elegant: 0 4px 20px hsl(0 0% 0% / 0.1);
+
+    /* Smooth Transitions */
+    --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Mode - Luxury Black Base */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Premium Gold remains consistent */
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 5%;
+
+    /* Dark Silver */
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 43 74% 49%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 43 74% 49%;
+
+    /* Dark Mode Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 10%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(43 74% 15%) 100%);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Luxury Button Variants */
+  .btn-luxury {
+    @apply bg-gradient-to-r from-luxury-gold to-luxury-gold-dark text-white font-semibold px-8 py-4 rounded-lg shadow-gold hover:shadow-luxury transition-all duration-300 hover:scale-105;
+  }
+
+  .btn-elegant {
+    @apply border-2 border-luxury-gold text-luxury-gold bg-transparent font-semibold px-8 py-4 rounded-lg hover:bg-luxury-gold hover:text-white transition-all duration-300;
+  }
+
+  /* Premium Card Styles */
+  .card-luxury {
+    @apply bg-card border border-border rounded-xl shadow-elegant backdrop-blur-sm hover:shadow-luxury transition-all duration-300;
+  }
+
+  /* Sophisticated Typography */
+  .heading-luxury {
+    @apply font-bold text-4xl lg:text-6xl bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold bg-clip-text text-transparent;
+  }
+
+  .text-luxury {
+    @apply text-luxury-gold font-semibold;
+  }
+
+  /* Elegant Animations */
+  .fade-in {
+    @apply animate-fade-in;
+  }
+
+  .slide-up {
+    @apply animate-slide-up;
+  }
+}
+
+@layer utilities {
+  /* Custom Gradient Backgrounds */
+  .bg-gradient-luxury {
+    background: var(--gradient-luxury);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  /* Custom Text Colors */
+  .text-luxury-gold {
+    color: hsl(var(--luxury-gold));
+  }
+
+  .text-luxury-silver {
+    color: hsl(var(--luxury-silver));
+  }
+
+  .text-luxury-black {
+    color: hsl(var(--luxury-black));
+  }
+
+  /* Custom Shadows */
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-luxury {
+    box-shadow: var(--shadow-luxury);
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  /* Custom Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out;
+  }
+}
