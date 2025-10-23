@@ -9,6 +9,8 @@ import {
   Briefcase
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import consultingImage from '@/assets/consulting-services.jpg'
+import digitalImage from '@/assets/digital-solutions.jpg'
 
 const Services = () => {
   const services = [
@@ -74,7 +76,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
             <div 
               key={index} 
@@ -118,6 +120,24 @@ const Services = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Image Showcase */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="overflow-hidden rounded-2xl shadow-luxury animate-fade-in">
+            <img 
+              src={consultingImage} 
+              alt="Consultoria contábil profissional analisando documentos financeiros" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="overflow-hidden rounded-2xl shadow-luxury animate-fade-in">
+            <img 
+              src={digitalImage} 
+              alt="Soluções digitais modernas para gestão contábil" 
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
         {/* CTA Section */}

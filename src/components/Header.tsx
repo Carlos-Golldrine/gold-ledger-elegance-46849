@@ -2,11 +2,16 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/ThemeToggle'
+import { useNavigate, useLocation } from 'react-router-dom'
 import logo from '@/assets/logo.svg'
 
 const Header = () => {
+  const navigate = useNavigate()
+  const location = useLocation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  
+  const isHomePage = location.pathname === '/'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,12 +23,26 @@ const Header = () => {
   }, [])
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Sobre', href: '#about' },
-    { name: 'Serviços', href: '#services' },
-    { name: 'Clientes', href: '#testimonials' },
-    { name: 'Contato', href: '#contact' }
+    { name: 'Home', href: '#home', path: '/' },
+    { name: 'Sobre', href: '#about', path: '/' },
+    { name: 'Serviços', href: '#services', path: '/' },
+    { name: 'Clientes', href: '#testimonials', path: '/' },
+    { name: 'Contato', href: '#contact', path: '/' }
   ]
+
+  const handleNavClick = (item: typeof navItems[0]) => {
+    if (location.pathname !== item.path) {
+      navigate(item.path)
+      setTimeout(() => {
+        const element = document.querySelector(item.href)
+        element?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    } else {
+      const element = document.querySelector(item.href)
+      element?.scrollIntoView({ behavior: 'smooth' })
+    }
+    setIsMenuOpen(false)
+  }
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -47,14 +66,20 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
+                onClick={() => handleNavClick(item)}
                 className="text-foreground hover:text-luxury-gold transition-colors duration-300 font-medium"
               >
                 {item.name}
-              </a>
+              </button>
             ))}
+            <button
+              onClick={() => navigate('/area-cliente')}
+              className="text-luxury-gold hover:text-luxury-gold-dark transition-colors duration-300 font-semibold"
+            >
+              Área do Cliente
+            </button>
           </nav>
 
           {/* Desktop Actions */}
@@ -87,15 +112,23 @@ const Header = () => {
           <div className="md:hidden bg-card border-t border-border animate-fade-in">
             <nav className="py-4 space-y-2">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="block px-4 py-3 text-foreground hover:text-luxury-gold hover:bg-accent rounded-lg transition-all duration-300"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => handleNavClick(item)}
+                  className="block w-full text-left px-4 py-3 text-foreground hover:text-luxury-gold hover:bg-accent rounded-lg transition-all duration-300"
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
+              <button
+                onClick={() => {
+                  navigate('/area-cliente')
+                  setIsMenuOpen(false)
+                }}
+                className="block w-full text-left px-4 py-3 text-luxury-gold hover:text-luxury-gold-dark hover:bg-accent rounded-lg transition-all duration-300 font-semibold"
+              >
+                Área do Cliente
+              </button>
               <div className="px-4 pt-2">
                 <Button 
                   variant="luxury"

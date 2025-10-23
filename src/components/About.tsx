@@ -8,6 +8,8 @@ import {
   CheckCircle,
   Star
 } from 'lucide-react'
+import teamImage from '@/assets/team-collaboration.jpg'
+import officeImage from '@/assets/office-interior.jpg'
 
 const About = () => {
   const stats = [
@@ -128,30 +130,48 @@ const About = () => {
           </div>
 
           <div className="relative animate-slide-up">
-            <div className="card-luxury p-8 bg-card border-2 border-luxury-gold/30">
+            <div className="overflow-hidden rounded-2xl shadow-luxury mb-8">
+              <img 
+                src={teamImage} 
+                alt="Equipe Werneck Contabilidade trabalhando em colaboração" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="card-luxury p-6 bg-card border-2 border-luxury-gold/30">
               <div className="text-center">
-                <Award className="h-16 w-16 text-luxury-gold mx-auto mb-6" />
-                <h4 className="text-2xl font-bold mb-4 text-foreground font-cardo">Certificações e Reconhecimentos</h4>
-                <div className="space-y-3 text-muted-foreground">
+                <Award className="h-12 w-12 text-luxury-gold mx-auto mb-4" />
+                <h4 className="text-xl font-bold mb-4 text-foreground font-cardo">Certificações e Reconhecimentos</h4>
+                <div className="space-y-3 text-sm text-muted-foreground">
                   <div className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-5 w-5 text-luxury-gold" />
+                    <CheckCircle className="h-4 w-4 text-luxury-gold" />
                     <span>CRC - Conselho Regional de Contabilidade</span>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-5 w-5 text-luxury-gold" />
+                    <CheckCircle className="h-4 w-4 text-luxury-gold" />
                     <span>Certificação Digital ICP-Brasil</span>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-5 w-5 text-luxury-gold" />
+                    <CheckCircle className="h-4 w-4 text-luxury-gold" />
                     <span>FENACON - Federação Nacional das Empresas</span>
                   </div>
                   <div className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-5 w-5 text-luxury-gold" />
+                    <CheckCircle className="h-4 w-4 text-luxury-gold" />
                     <span>ISO 9001 - Gestão da Qualidade</span>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Office Image Section */}
+        <div className="mb-20 animate-fade-in">
+          <div className="overflow-hidden rounded-2xl shadow-luxury">
+            <img 
+              src={officeImage} 
+              alt="Escritório moderno da Werneck Contabilidade" 
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
 
