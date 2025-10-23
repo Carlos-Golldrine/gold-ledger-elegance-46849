@@ -159,14 +159,6 @@ const Footer = () => {
                   <p className="text-xs text-muted-foreground">Resposta em até 2h</p>
                 </div>
               </div>
-              
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-4 w-4 text-luxury-gold flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-sm text-foreground">Av. Paulista, 1234</p>
-                  <p className="text-xs text-muted-foreground">Bela Vista, São Paulo - SP</p>
-                </div>
-              </div>
             </div>
 
             {/* Legal Links */}

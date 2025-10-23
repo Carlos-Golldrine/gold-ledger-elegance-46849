@@ -56,12 +56,6 @@ const Contact = () => {
       title: "E-mail",
       details: ["verneckcontabilidade@gmail.com"],
       action: "mailto:verneckcontabilidade@gmail.com"
-    },
-    {
-      icon: <MapPin className="h-6 w-6" />,
-      title: "Endereço",
-      details: ["Av. Paulista, 1234 - Sala 567", "Bela Vista, São Paulo - SP"],
-      action: "https://maps.google.com"
     }
   ]
 
@@ -272,30 +266,6 @@ const Contact = () => {
                     Política de Privacidade
                   </a>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Map Section */}
-        <div className="mt-16 animate-fade-in">
-          <div className="card-luxury overflow-hidden">
-            <div className="bg-card border-b-2 border-luxury-gold/30 p-6">
-              <h3 className="text-2xl font-bold text-foreground mb-2 font-cardo">Nossa Localização</h3>
-              <p className="text-muted-foreground">Venha nos visitar no coração de São Paulo</p>
-            </div>
-            <div className="h-96 bg-muted flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-luxury-gold mx-auto mb-4" />
-                <p className="text-muted-foreground">Mapa interativo do Google Maps</p>
-                <p className="text-sm text-muted-foreground">Av. Paulista, 1234 - Bela Vista, São Paulo</p>
-                <Button 
-                  variant="outline"
-                  className="mt-4 border-2 border-luxury-silver hover:bg-luxury-silver/10"
-                  onClick={() => window.open('https://maps.google.com', '_blank')}
-                >
-                  Ver no Google Maps
-                </Button>
               </div>
             </div>
           </div>
