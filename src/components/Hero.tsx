@@ -66,7 +66,7 @@ const Hero = () => {
               <Button 
                 variant="elegant" 
                 size="lg"
-                onClick={() => window.open('https://wa.me/5561933765060?text=Olá! Tenho interesse em conhecer melhor os serviços da ContaMax.', '_blank')}
+                onClick={() => window.open('https://wa.me/5561933765060?text=Olá! Tenho interesse em conhecer melhor os serviços da Werneck Contabilidade.', '_blank')}
               >
                 Fale Conosco
               </Button>
@@ -80,7 +80,7 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-2xl overflow-hidden">
                 <img 
                   src={heroImage} 
-                  alt="Escritório moderno de contabilidade ContaMax"
+                  alt="Escritório moderno de contabilidade Werneck"
                   className="w-full h-full object-cover opacity-20"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-luxury-black via-transparent to-luxury-black/50"></div>

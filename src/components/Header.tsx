@@ -35,8 +35,8 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <img 
               src={logo} 
-              alt="ContaMax Logo" 
-              className="h-12 w-auto object-contain"
+              alt="Werneck Contabilidade Logo" 
+              className="h-16 w-auto object-contain"
             />
           </div>
 

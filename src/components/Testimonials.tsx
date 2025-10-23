@@ -6,7 +6,7 @@ const Testimonials = () => {
       name: "Maria Santos",
       company: "Distribuidora Santos & Cia",
       role: "CEO",
-      content: "A ContaMax transformou nossa gestão fiscal. O atendimento é excepcional e a equipe sempre está disponível para esclarecer dúvidas. Recomendo sem hesitar!",
+      content: "A Werneck Contabilidade transformou nossa gestão fiscal. O atendimento é excepcional e a equipe sempre está disponível para esclarecer dúvidas. Recomendo sem hesitar!",
       rating: 5,
       industry: "Distribuição"
     },
@@ -14,7 +14,7 @@ const Testimonials = () => {
       name: "João Oliveira",
       company: "Construtora Oliveira",
       role: "Diretor Financeiro",
-      content: "Trabalho com a ContaMax há 8 anos. A consultoria tributária deles nos economizou milhares de reais em impostos através do planejamento fiscal inteligente.",
+      content: "Trabalho com a Werneck Contabilidade há 8 anos. A consultoria tributária deles nos economizou milhares de reais em impostos através do planejamento fiscal inteligente.",
       rating: 5,
       industry: "Construção"
     },
@@ -22,7 +22,7 @@ const Testimonials = () => {
       name: "Ana Costa",
       company: "Restaurante Sabor & Arte",
       role: "Proprietária",
-      content: "Como empresária iniciante, encontrei na ContaMax o suporte que precisava. Eles me guiaram em cada etapa, desde a abertura da empresa até o crescimento atual.",
+      content: "Como empresária iniciante, encontrei na Werneck Contabilidade o suporte que precisava. Eles me guiaram em cada etapa, desde a abertura da empresa até o crescimento atual.",
       rating: 5,
       industry: "Alimentação"
     },
@@ -30,7 +30,7 @@ const Testimonials = () => {
       name: "Carlos Ferreira",
       company: "Tech Solutions Ltda",
       role: "Sócio-Fundador",
-      content: "Profissionalismo e expertise técnica são os diferenciais da ContaMax. Nossa empresa de tecnologia tem necessidades específicas que eles atendem perfeitamente.",
+      content: "Profissionalismo e expertise técnica são os diferenciais da Werneck Contabilidade. Nossa empresa de tecnologia tem necessidades específicas que eles atendem perfeitamente.",
       rating: 5,
       industry: "Tecnologia"
     },
@@ -46,7 +46,7 @@ const Testimonials = () => {
       name: "Pedro Almeida",
       company: "Indústria Almeida",
       role: "Gerente Administrativo",
-      content: "Migrar para a ContaMax foi uma das melhores decisões que tomamos. A organização e transparência nos processos trouxeram muito mais segurança para nossa indústria.",
+      content: "Migrar para a Werneck Contabilidade foi uma das melhores decisões que tomamos. A organização e transparência nos processos trouxeram muito mais segurança para nossa indústria.",
       rating: 5,
       industry: "Industrial"
     }
@@ -135,7 +135,7 @@ const Testimonials = () => {
               Empresas que <span className="text-luxury-gold">Confiam</span> em Nós
             </h3>
             <p className="text-muted-foreground">
-              Alguns dos clientes que escolheram a ContaMax como parceira contábil
+              Alguns dos clientes que escolheram a Werneck Contabilidade como parceira contábil
             </p>
           </div>
 

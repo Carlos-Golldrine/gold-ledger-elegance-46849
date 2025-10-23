@@ -54,8 +54,8 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "E-mail",
-      details: ["contato@contamax.com.br", "comercial@contamax.com.br"],
-      action: "mailto:contato@contamax.com.br"
+      details: ["contato@werneck.com.br", "comercial@werneck.com.br"],
+      action: "mailto:contato@werneck.com.br"
     },
     {
       icon: <MapPin className="h-6 w-6" />,

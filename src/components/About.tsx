@@ -65,11 +65,11 @@ const About = () => {
           
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="text-foreground">Conheça a</span>
-            <span className="text-luxury-gold"> ContaMax</span>
+            <span className="text-luxury-gold"> Werneck Contabilidade</span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Há mais de 15 anos no mercado, a ContaMax é sinônimo de excelência 
+            Há mais de 15 anos no mercado, a Werneck Contabilidade é sinônimo de excelência 
             em serviços contábeis, construindo relacionamentos sólidos baseados 
             na confiança e transparência.
           </p>
@@ -102,9 +102,9 @@ const About = () => {
             </h3>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Fundada em 2009, a ContaMax nasceu com o propósito de transformar 
+                Fundada em 2009, a Werneck Contabilidade nasceu com o propósito de transformar 
                 a experiência dos empresários com serviços contábeis. Começamos como 
-                um pequeno escritório com grandes ambições: oferecer serviços de 
+                um pequeno escritório com grandes ambições: oferecer serviços de
                 qualidade excepcional aliados ao atendimento personalizado.
               </p>
               <p>

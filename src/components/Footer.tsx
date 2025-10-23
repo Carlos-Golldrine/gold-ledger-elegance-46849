@@ -53,7 +53,7 @@ const Footer = () => {
                 <Calculator className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-luxury-gold">ContaMax</h3>
+                <h3 className="text-2xl font-bold text-luxury-gold">Werneck Contabilidade</h3>
                 <p className="text-xs text-gray-400">Excelência Contábil</p>
               </div>
             </div>
@@ -155,7 +155,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-luxury-gold flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-gray-300">contato@contamax.com.br</p>
+                  <p className="text-sm text-gray-300">contato@werneck.com.br</p>
                   <p className="text-xs text-gray-400">Resposta em até 2h</p>
                 </div>
               </div>
@@ -196,7 +196,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center md:text-left">
               <p className="text-sm text-gray-400">
-                © 2024 ContaMax Contabilidade. Todos os direitos reservados.
+                © 2024 Werneck Contabilidade. Todos os direitos reservados.
               </p>
               <p className="text-xs text-gray-500 mt-1">
                 CNPJ: 12.345.678/0001-90 | CRC: SP-123456/O-7
