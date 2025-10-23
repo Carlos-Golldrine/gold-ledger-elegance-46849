@@ -1,64 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Sophisticated Accounting Firm Design System - Luxury Black, Silver, Gold Theme */
+/* Sophisticated Accounting Firm Design System - Elegant Black, Silver, White with Gold Accents */
 
 @layer base {
   :root {
-    /* Light Mode - Elegant Silver Base */
-    --background: 0 0% 98%;
-    --foreground: 0 0% 8%;
+    /* Light Mode - Clean White Base with Silver and Gold Accents */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
+    --card-foreground: 0 0% 0%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
+    --popover-foreground: 0 0% 0%;
 
-    /* Premium Gold Primary */
-    --primary: 43 74% 49%;
-    --primary-foreground: 0 0% 100%;
+    /* Elegant Silver Primary */
+    --primary: 0 0% 70%;
+    --primary-foreground: 0 0% 0%;
 
-    /* Sophisticated Silver */
-    --secondary: 0 0% 75%;
-    --secondary-foreground: 0 0% 8%;
+    /* Refined Silver Secondary */
+    --secondary: 0 0% 85%;
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 35%;
 
-    /* Elegant Accent */
-    --accent: 43 74% 49%;
+    /* Gold Accent (used sparingly) */
+    --accent: 43 58% 46%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 95%;
-    --ring: 43 74% 49%;
+    --border: 0 0% 88%;
+    --input: 0 0% 96%;
+    --ring: 0 0% 70%;
 
     --radius: 0.75rem;
 
-    /* Premium Color Palette */
-    --luxury-black: 0 0% 5%;
-    --luxury-silver: 0 0% 75%;
-    --luxury-gold: 43 74% 49%;
-    --luxury-gold-light: 43 74% 65%;
-    --luxury-gold-dark: 43 74% 35%;
+    /* Elegant Color Palette - Black, Silver, White with Gold Details */
+    --luxury-black: 0 0% 0%;
+    --luxury-silver: 0 0% 70%;
+    --luxury-silver-light: 0 0% 85%;
+    --luxury-silver-dark: 0 0% 55%;
+    --luxury-white: 0 0% 100%;
+    --luxury-gold: 43 58% 46%;
+    --luxury-gold-light: 43 58% 58%;
+    --luxury-gold-dark: 43 58% 35%;
 
-    /* Elegant Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(43 74% 49%) 0%, hsl(43 74% 35%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 75%) 0%, hsl(0 0% 60%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 15%) 100%);
-    --gradient-luxury: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(43 74% 49%) 100%);
+    /* Refined Gradients - Silver focused */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 70%) 0%, hsl(0 0% 85%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 85%) 0%, hsl(0 0% 95%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 0%) 0%, hsl(0 0% 10%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(0 0% 0%) 0%, hsl(0 0% 20%) 100%);
+    --gradient-gold-accent: linear-gradient(135deg, hsl(43 58% 46%) 0%, hsl(43 58% 35%) 100%);
 
     /* Sophisticated Shadows */
-    --shadow-luxury: 0 20px 60px -15px hsl(0 0% 0% / 0.3);
-    --shadow-gold: 0 10px 40px -10px hsl(43 74% 49% / 0.4);
-    --shadow-elegant: 0 4px 20px hsl(0 0% 0% / 0.1);
+    --shadow-luxury: 0 20px 60px -15px hsl(0 0% 0% / 0.2);
+    --shadow-silver: 0 10px 40px -10px hsl(0 0% 70% / 0.3);
+    --shadow-elegant: 0 4px 20px hsl(0 0% 0% / 0.08);
+    --shadow-gold: 0 10px 40px -10px hsl(43 58% 46% / 0.3);
 
     /* Smooth Transitions */
     --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -82,40 +85,42 @@
   }
 
   .dark {
-    /* Dark Mode - Luxury Black Base */
-    --background: 0 0% 5%;
-    --foreground: 0 0% 95%;
+    /* Dark Mode - Deep Black Base with Silver and White */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
 
-    /* Premium Gold remains consistent */
-    --primary: 43 74% 49%;
-    --primary-foreground: 0 0% 5%;
+    /* Silver Primary in Dark Mode */
+    --primary: 0 0% 70%;
+    --primary-foreground: 0 0% 0%;
 
-    /* Dark Silver */
-    --secondary: 0 0% 20%;
-    --secondary-foreground: 0 0% 95%;
+    /* Dark Silver Secondary */
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 0 0% 8%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 43 74% 49%;
-    --accent-foreground: 0 0% 5%;
+    /* Gold Accent (used sparingly) */
+    --accent: 43 58% 46%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 12%;
-    --ring: 43 74% 49%;
+    --border: 0 0% 12%;
+    --input: 0 0% 8%;
+    --ring: 0 0% 70%;
 
-    /* Dark Mode Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 10%) 100%);
-    --gradient-luxury: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(43 74% 15%) 100%);
+    /* Dark Mode Gradients - Black focused */
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 0%) 0%, hsl(0 0% 8%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(0 0% 0%) 0%, hsl(0 0% 15%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 15%) 0%, hsl(0 0% 25%) 100%);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -133,7 +138,13 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cardo', serif;
   }
 
   html {
@@ -142,13 +153,17 @@
 }
 
 @layer components {
-  /* Luxury Button Variants */
+  /* Elegant Button Variants - Silver focused with Gold accents */
   .btn-luxury {
-    @apply bg-gradient-to-r from-luxury-gold to-luxury-gold-dark text-white font-semibold px-8 py-4 rounded-lg shadow-gold hover:shadow-luxury transition-all duration-300 hover:scale-105;
+    @apply bg-luxury-silver text-luxury-black font-semibold px-8 py-4 rounded-lg shadow-silver hover:bg-luxury-silver-light transition-all duration-300 hover:scale-105 font-cardo;
   }
 
   .btn-elegant {
-    @apply border-2 border-luxury-gold text-luxury-gold bg-transparent font-semibold px-8 py-4 rounded-lg hover:bg-luxury-gold hover:text-white transition-all duration-300;
+    @apply border-2 border-luxury-silver text-luxury-black bg-transparent font-semibold px-8 py-4 rounded-lg hover:bg-luxury-silver hover:text-luxury-black transition-all duration-300 font-cardo;
+  }
+
+  .btn-gold-accent {
+    @apply bg-gradient-to-r from-luxury-gold to-luxury-gold-dark text-white font-semibold px-8 py-4 rounded-lg shadow-gold hover:shadow-luxury transition-all duration-300 hover:scale-105 font-cardo;
   }
 
   /* Premium Card Styles */
@@ -158,10 +173,18 @@
 
   /* Sophisticated Typography */
   .heading-luxury {
-    @apply font-bold text-4xl lg:text-6xl bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold bg-clip-text text-transparent;
+    @apply font-bold text-4xl lg:text-6xl text-luxury-black dark:text-luxury-white font-cardo;
   }
 
-  .text-luxury {
+  .heading-gold-accent {
+    @apply font-bold text-4xl lg:text-6xl bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold bg-clip-text text-transparent font-cardo;
+  }
+
+  .text-luxury-silver {
+    @apply text-luxury-silver font-light;
+  }
+
+  .text-luxury-gold {
     @apply text-luxury-gold font-semibold;
   }
 
@@ -189,6 +212,10 @@
     background: var(--gradient-primary);
   }
 
+  .bg-gradient-gold-accent {
+    background: var(--gradient-gold-accent);
+  }
+
   /* Custom Text Colors */
   .text-luxury-gold {
     color: hsl(var(--luxury-gold));
@@ -202,6 +229,10 @@
     color: hsl(var(--luxury-black));
   }
 
+  .text-luxury-white {
+    color: hsl(var(--luxury-white));
+  }
+
   /* Custom Shadows */
   .shadow-elegant {
     box-shadow: var(--shadow-elegant);
@@ -213,6 +244,10 @@
 
   .shadow-gold {
     box-shadow: var(--shadow-gold);
+  }
+
+  .shadow-silver {
+    box-shadow: var(--shadow-silver);
   }
 
   /* Custom Animations */

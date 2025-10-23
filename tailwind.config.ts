@@ -20,6 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				inter: ['Inter', 'sans-serif'],
+				cardo: ['Cardo', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -57,6 +58,9 @@ export default {
 				},
 				'luxury-black': 'hsl(var(--luxury-black))',
 				'luxury-silver': 'hsl(var(--luxury-silver))',
+				'luxury-silver-light': 'hsl(var(--luxury-silver-light))',
+				'luxury-silver-dark': 'hsl(var(--luxury-silver-dark))',
+				'luxury-white': 'hsl(var(--luxury-white))',
 				'luxury-gold': 'hsl(var(--luxury-gold))',
 				'luxury-gold-light': 'hsl(var(--luxury-gold-light))',
 				'luxury-gold-dark': 'hsl(var(--luxury-gold-dark))',
@@ -106,6 +110,7 @@ export default {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-gold-accent': 'var(--gradient-gold-accent)',
 			}
 		}
 	},
