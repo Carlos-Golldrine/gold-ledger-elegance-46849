@@ -156,7 +156,7 @@ const Services = () => {
             </p>
             <Button 
               className="bg-luxury-silver hover:bg-luxury-silver-light text-foreground font-semibold shadow-silver"
-              onClick={() => window.open('https://wa.me/5561933765060?text=Olá! Preciso de ajuda com serviços contábeis especializados.', '_blank')}
+              onClick={() => window.open('https://wa.me/5561993376506?text=Olá! Preciso de ajuda com serviços contábeis especializados.', '_blank')}
             >
               Fale com um Especialista
             </Button>

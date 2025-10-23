@@ -42,20 +42,20 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Telefone",
-      details: ["(61) 9337-6506", "Atendimento comercial"],
-      action: "tel:+5561933765060"
+      details: ["(61) 99337-6506", "Atendimento comercial"],
+      action: "tel:+5561993376506"
     },
     {
       icon: <MessageSquare className="h-6 w-6" />,
       title: "WhatsApp",
-      details: ["(61) 9337-6506", "Resposta imediata"],
-      action: "https://wa.me/5561933765060?text=Olá! Gostaria de solicitar um orçamento para serviços contábeis."
+      details: ["(61) 99337-6506", "Resposta imediata"],
+      action: "https://wa.me/5561993376506?text=Olá! Gostaria de solicitar um orçamento para serviços contábeis."
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "E-mail",
-      details: ["contato@werneck.com.br", "comercial@werneck.com.br"],
-      action: "mailto:contato@werneck.com.br"
+      details: ["verneckcontabilidade@gmail.com"],
+      action: "mailto:verneckcontabilidade@gmail.com"
     },
     {
       icon: <MapPin className="h-6 w-6" />,

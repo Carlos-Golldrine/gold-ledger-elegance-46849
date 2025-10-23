@@ -87,7 +87,7 @@ const Header = () => {
             <ThemeToggle />
             <Button 
               variant="elegant"
-              onClick={() => window.open('https://wa.me/5561933765060?text=Olá! Gostaria de solicitar um orçamento para serviços contábeis.', '_blank')}
+              onClick={() => window.open('https://wa.me/5561993376506?text=Olá! Gostaria de solicitar um orçamento para serviços contábeis.', '_blank')}
             >
               Solicitar Orçamento
             </Button>
@@ -133,7 +133,7 @@ const Header = () => {
                 <Button 
                   variant="luxury"
                   className="w-full"
-                  onClick={() => window.open('https://wa.me/5561933765060?text=Olá! Gostaria de solicitar um orçamento para serviços contábeis.', '_blank')}
+                  onClick={() => window.open('https://wa.me/5561993376506?text=Olá! Gostaria de solicitar um orçamento para serviços contábeis.', '_blank')}
                 >
                   Solicitar Orçamento
                 </Button>

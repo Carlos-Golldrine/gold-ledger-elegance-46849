@@ -147,7 +147,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-luxury-gold flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-foreground">(61) 9337-6506</p>
+                  <p className="text-sm text-foreground">(61) 99337-6506</p>
                   <p className="text-xs text-muted-foreground">Segunda a Sexta, 8h às 18h</p>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-luxury-gold flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-foreground">contato@werneck.com.br</p>
+                  <p className="text-sm text-foreground">verneckcontabilidade@gmail.com</p>
                   <p className="text-xs text-muted-foreground">Resposta em até 2h</p>
                 </div>
               </div>

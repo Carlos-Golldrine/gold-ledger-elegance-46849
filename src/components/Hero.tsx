@@ -57,7 +57,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-luxury-silver hover:bg-luxury-silver-light text-foreground font-semibold shadow-silver"
-                onClick={() => window.open('https://wa.me/5561933765060?text=Olá! Gostaria de solicitar um orçamento para serviços contábeis.', '_blank')}
+                onClick={() => window.open('https://wa.me/5561993376506?text=Olá! Gostaria de solicitar um orçamento para serviços contábeis.', '_blank')}
               >
                 Solicitar Orçamento
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -67,7 +67,7 @@ const Hero = () => {
                 variant="outline" 
                 size="lg"
                 className="border-2 border-luxury-silver hover:bg-luxury-silver/10"
-                onClick={() => window.open('https://wa.me/5561933765060?text=Olá! Tenho interesse em conhecer melhor os serviços da Werneck Contabilidade.', '_blank')}
+                onClick={() => window.open('https://wa.me/5561993376506?text=Olá! Tenho interesse em conhecer melhor os serviços da Werneck Contabilidade.', '_blank')}
               >
                 Fale Conosco
               </Button>
