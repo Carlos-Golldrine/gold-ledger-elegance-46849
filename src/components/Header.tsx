@@ -39,8 +39,8 @@ const Header = () => {
               className="h-16 w-auto object-contain"
             />
             <div>
-              <h1 className="text-2xl font-bold text-foreground font-cardo">Werneck</h1>
-              <p className="text-sm text-muted-foreground">Contabilidade</p>
+              <h1 className="text-xl font-bold text-foreground font-cardo">Werneck Contabilidade</h1>
+              <p className="text-xs text-muted-foreground">Excelência Contábil</p>
             </div>
           </div>
 
