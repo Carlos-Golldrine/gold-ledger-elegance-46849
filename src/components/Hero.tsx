@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Hero Content */}
           <div className="animate-fade-in">
-            <div className="inline-flex items-center px-4 py-2 bg-card/50 backdrop-blur-sm border border-luxury-gold/20 rounded-full mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-luxury-gold/20 border border-luxury-gold/40 rounded-full mb-6">
               <Shield className="h-4 w-4 text-luxury-gold mr-2" />
               <span className="text-sm font-medium text-luxury-gold">Há 15 anos no mercado</span>
             </div>
@@ -25,7 +25,7 @@ const Hero = () => {
               <span className="text-foreground">de Excelência</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-xl text-foreground mb-8 leading-relaxed font-medium">
               Oferecemos serviços contábeis premium com transparência, 
               confiabilidade e excelência para impulsionar o sucesso do seu negócio.
             </p>
@@ -33,22 +33,22 @@ const Hero = () => {
             {/* Value Propositions */}
             <div className="grid grid-cols-3 gap-6 mb-10">
               <div className="text-center">
-                <div className="bg-luxury-gold/20 backdrop-blur-sm p-4 rounded-lg mb-3 inline-block">
+                <div className="bg-luxury-gold/20 p-4 rounded-lg mb-3 inline-block">
                   <Shield className="h-6 w-6 text-luxury-gold" />
                 </div>
-                <p className="text-sm text-muted-foreground font-medium">Transparência</p>
+                <p className="text-sm text-foreground font-semibold">Transparência</p>
               </div>
               <div className="text-center">
-                <div className="bg-luxury-gold/20 backdrop-blur-sm p-4 rounded-lg mb-3 inline-block">
+                <div className="bg-luxury-gold/20 p-4 rounded-lg mb-3 inline-block">
                   <TrendingUp className="h-6 w-6 text-luxury-gold" />
                 </div>
-                <p className="text-sm text-muted-foreground font-medium">Excelência</p>
+                <p className="text-sm text-foreground font-semibold">Excelência</p>
               </div>
               <div className="text-center">
-                <div className="bg-luxury-gold/20 backdrop-blur-sm p-4 rounded-lg mb-3 inline-block">
+                <div className="bg-luxury-gold/20 p-4 rounded-lg mb-3 inline-block">
                   <Users className="h-6 w-6 text-luxury-gold" />
                 </div>
-                <p className="text-sm text-muted-foreground font-medium">Confiabilidade</p>
+                <p className="text-sm text-foreground font-semibold">Confiabilidade</p>
               </div>
             </div>
 
