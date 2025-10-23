@@ -156,7 +156,7 @@ const About = () => {
         </div>
 
         {/* Mission, Vision, Values */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-3 gap-8">
           {values.map((value, index) => (
             <div 
               key={index} 
@@ -172,37 +172,6 @@ const About = () => {
               <p className="text-muted-foreground leading-relaxed">{value.description}</p>
             </div>
           ))}
-        </div>
-
-        {/* Team Section */}
-        <div className="animate-fade-in">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4 font-cardo">
-              <span className="text-foreground">Nossa</span>
-              <span className="text-luxury-gold"> Equipe</span>
-            </h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Profissionais experientes e qualificados, prontos para oferecer 
-              as melhores soluções para o seu negócio.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div 
-                key={index} 
-                className="card-luxury p-6 text-center group hover:scale-105 transition-all duration-300 animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-24 h-24 bg-gradient-primary rounded-full mx-auto mb-4 flex items-center justify-center shadow-gold">
-                  <Users className="h-12 w-12 text-white" />
-                </div>
-                <h5 className="text-lg font-bold text-foreground mb-2">{member.name}</h5>
-                <p className="text-luxury-gold font-medium mb-3">{member.role}</p>
-                <p className="text-sm text-muted-foreground leading-relaxed">{member.description}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
