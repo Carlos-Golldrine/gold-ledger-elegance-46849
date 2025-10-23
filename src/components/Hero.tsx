@@ -4,9 +4,9 @@ import heroImage from '@/assets/accounting-office-hero.jpg'
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen bg-gradient-hero relative overflow-hidden">
+    <section id="home" className="min-h-screen bg-background relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/10 opacity-30"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-muted/50 to-accent/10"></div>
       
       <div className="container mx-auto px-4 pt-32 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
