@@ -38,6 +38,10 @@ const Header = () => {
               alt="Werneck Contabilidade Logo" 
               className="h-16 w-auto object-contain"
             />
+            <div>
+              <h1 className="text-2xl font-bold text-foreground font-cardo">Werneck</h1>
+              <p className="text-sm text-muted-foreground">Contabilidade</p>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
