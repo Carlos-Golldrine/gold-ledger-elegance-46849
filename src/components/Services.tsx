@@ -9,8 +9,12 @@ import {
   Briefcase
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import consultingImage from '@/assets/consulting-services.jpg'
-import digitalImage from '@/assets/digital-solutions.jpg'
+import serviceEmpresarial from '@/assets/service-empresarial.jpg'
+import serviceTributaria from '@/assets/service-tributaria.jpg'
+import serviceAbertura from '@/assets/service-abertura.jpg'
+import serviceFolha from '@/assets/service-folha.jpg'
+import serviceImposto from '@/assets/service-imposto.jpg'
+import servicePlanejamento from '@/assets/service-planejamento.jpg'
 
 const Services = () => {
   const services = [
@@ -18,37 +22,43 @@ const Services = () => {
       icon: <Building2 className="h-8 w-8" />,
       title: "Contabilidade Empresarial",
       description: "Gestão contábil completa para empresas de todos os portes, incluindo escrituração fiscal e demonstrações financeiras.",
-      benefits: ["Relatórios gerenciais", "Controle fiscal", "Demonstrações contábeis", "Compliance regulatório"]
+      benefits: ["Relatórios gerenciais", "Controle fiscal", "Demonstrações contábeis", "Compliance regulatório"],
+      image: serviceEmpresarial
     },
     {
       icon: <Calculator className="h-8 w-8" />,
       title: "Consultoria Tributária",
       description: "Otimização da carga tributária e orientação estratégica para redução legal de impostos.",
-      benefits: ["Planejamento tributário", "Elisão fiscal", "Análise de enquadramento", "Consultoria especializada"]
+      benefits: ["Planejamento tributário", "Elisão fiscal", "Análise de enquadramento", "Consultoria especializada"],
+      image: serviceTributaria
     },
     {
       icon: <FileText className="h-8 w-8" />,
       title: "Abertura e Regularização",
       description: "Abertura de empresas, alterações contratuais e regularização de situações fiscais pendentes.",
-      benefits: ["Processo ágil", "Documentação completa", "Suporte jurídico", "Acompanhamento integral"]
+      benefits: ["Processo ágil", "Documentação completa", "Suporte jurídico", "Acompanhamento integral"],
+      image: serviceAbertura
     },
     {
       icon: <Users className="h-8 w-8" />,
       title: "Folha de Pagamento",
       description: "Gestão completa de recursos humanos, incluindo folha de pagamento, benefícios e obrigações trabalhistas.",
-      benefits: ["Cálculo preciso", "Obrigações acessórias", "E-Social", "Gestão de benefícios"]
+      benefits: ["Cálculo preciso", "Obrigações acessórias", "E-Social", "Gestão de benefícios"],
+      image: serviceFolha
     },
     {
       icon: <PieChart className="h-8 w-8" />,
       title: "Imposto de Renda",
       description: "Declaração de imposto de renda para pessoas físicas e jurídicas com máxima restituição.",
-      benefits: ["Análise detalhada", "Máxima restituição", "Revisão de anos anteriores", "Planejamento anual"]
+      benefits: ["Análise detalhada", "Máxima restituição", "Revisão de anos anteriores", "Planejamento anual"],
+      image: serviceImposto
     },
     {
       icon: <TrendingUp className="h-8 w-8" />,
       title: "Planejamento Financeiro",
       description: "Consultoria em planejamento financeiro e análise de viabilidade para crescimento empresarial.",
-      benefits: ["Análise de fluxo de caixa", "Projeções financeiras", "Indicadores de performance", "Assessoria estratégica"]
+      benefits: ["Análise de fluxo de caixa", "Projeções financeiras", "Indicadores de performance", "Assessoria estratégica"],
+      image: servicePlanejamento
     }
   ]
 
@@ -76,68 +86,61 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="card-luxury p-8 group hover:scale-105 transition-all duration-300 animate-slide-up"
+              className="card-luxury overflow-hidden group hover:scale-105 transition-all duration-300 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Icon */}
-              <div className="bg-gradient-primary p-4 rounded-xl w-fit mb-6 shadow-gold group-hover:shadow-luxury transition-all duration-300">
-                <div className="text-white">
-                  {service.icon}
-                </div>
+              {/* Service Image */}
+              <div className="overflow-hidden h-48">
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
 
-              {/* Content */}
-              <h3 className="text-xl font-bold mb-4 text-foreground group-hover:text-luxury-gold transition-colors">
-                {service.title}
-              </h3>
-              
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                {service.description}
-              </p>
-
-              {/* Benefits */}
-              <div className="space-y-3">
-                <h4 className="text-sm font-semibold text-luxury-gold uppercase tracking-wide">
-                  Benefícios:
-                </h4>
-                <div className="grid grid-cols-2 gap-2">
-                  {service.benefits.map((benefit, idx) => (
-                    <div key={idx} className="flex items-center space-x-2">
-                      <div className="w-1.5 h-1.5 bg-luxury-gold rounded-full"></div>
-                      <span className="text-sm text-muted-foreground">{benefit}</span>
-                    </div>
-                  ))}
+              <div className="p-8">
+                {/* Icon */}
+                <div className="bg-gradient-primary p-4 rounded-xl w-fit mb-6 shadow-gold group-hover:shadow-luxury transition-all duration-300">
+                  <div className="text-white">
+                    {service.icon}
+                  </div>
                 </div>
-              </div>
 
-              {/* Hover Effect */}
-              <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="h-1 w-full bg-gradient-primary rounded-full"></div>
+                {/* Content */}
+                <h3 className="text-xl font-bold mb-4 text-foreground group-hover:text-luxury-gold transition-colors">
+                  {service.title}
+                </h3>
+                
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  {service.description}
+                </p>
+
+                {/* Benefits */}
+                <div className="space-y-3">
+                  <h4 className="text-sm font-semibold text-luxury-gold uppercase tracking-wide">
+                    Benefícios:
+                  </h4>
+                  <div className="grid grid-cols-2 gap-2">
+                    {service.benefits.map((benefit, idx) => (
+                      <div key={idx} className="flex items-center space-x-2">
+                        <div className="w-1.5 h-1.5 bg-luxury-gold rounded-full"></div>
+                        <span className="text-sm text-muted-foreground">{benefit}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Hover Effect */}
+                <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="h-1 w-full bg-gradient-primary rounded-full"></div>
+                </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Image Showcase */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="overflow-hidden rounded-2xl shadow-luxury animate-fade-in">
-            <img 
-              src={consultingImage} 
-              alt="Consultoria contábil profissional analisando documentos financeiros" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="overflow-hidden rounded-2xl shadow-luxury animate-fade-in">
-            <img 
-              src={digitalImage} 
-              alt="Soluções digitais modernas para gestão contábil" 
-              className="w-full h-full object-cover"
-            />
-          </div>
         </div>
 
         {/* CTA Section */}
