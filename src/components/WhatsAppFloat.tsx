@@ -19,7 +19,7 @@ const WhatsAppFloat = () => {
     <div className="fixed bottom-6 right-6 z-50 animate-bounce">
       <Button
         onClick={handleWhatsAppClick}
-        className="w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 [&>svg]:!h-12 [&>svg]:!w-12"
+        className="w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 [&>svg]:!h-9 [&>svg]:!w-9"
         aria-label="Conversar no WhatsApp"
       >
         <WhatsAppIcon />
