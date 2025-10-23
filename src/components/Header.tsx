@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
-import { Menu, X, Calculator } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/ThemeToggle'
+import logo from '@/assets/logo.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -32,13 +33,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="bg-gradient-primary p-3 rounded-lg shadow-gold">
-              <Calculator className="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <h1 className="text-2xl font-bold text-luxury-gold">ContaMax</h1>
-              <p className="text-xs text-muted-foreground">Excelência Contábil</p>
-            </div>
+            <img 
+              src={logo} 
+              alt="ContaMax Logo" 
+              className="h-12 w-auto object-contain"
+            />
           </div>
 
           {/* Desktop Navigation */}
