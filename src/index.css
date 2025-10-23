@@ -180,14 +180,6 @@
     @apply font-bold text-4xl lg:text-6xl bg-gradient-to-r from-luxury-gold via-luxury-gold-light to-luxury-gold bg-clip-text text-transparent font-cardo;
   }
 
-  .text-luxury-silver {
-    @apply text-luxury-silver font-light;
-  }
-
-  .text-luxury-gold {
-    @apply text-luxury-gold font-semibold;
-  }
-
   /* Elegant Animations */
   .fade-in {
     @apply animate-fade-in;
