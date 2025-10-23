@@ -42,7 +42,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-luxury-black text-white">
+    <footer className="bg-card border-t border-border">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
@@ -53,12 +53,12 @@ const Footer = () => {
                 <Calculator className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-luxury-gold">Werneck Contabilidade</h3>
-                <p className="text-xs text-gray-400">Excelência Contábil</p>
+                <h3 className="text-2xl font-bold text-luxury-gold font-cardo">Werneck Contabilidade</h3>
+                <p className="text-xs text-muted-foreground">Excelência Contábil</p>
               </div>
             </div>
             
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-muted-foreground mb-6 leading-relaxed">
               Há mais de 15 anos oferecendo soluções contábeis de excelência, 
               baseadas na transparência, confiabilidade e compromisso com 
               o sucesso dos nossos clientes.
@@ -68,11 +68,11 @@ const Footer = () => {
             <div className="flex items-center space-x-4 mb-6">
               <div className="flex items-center space-x-2">
                 <Shield className="h-4 w-4 text-luxury-gold" />
-                <span className="text-xs text-gray-400">CRC Certificado</span>
+                <span className="text-xs text-muted-foreground">CRC Certificado</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Award className="h-4 w-4 text-luxury-gold" />
-                <span className="text-xs text-gray-400">ISO 9001</span>
+                <span className="text-xs text-muted-foreground">ISO 9001</span>
               </div>
             </div>
 
@@ -80,37 +80,37 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a 
                 href="#" 
-                className="bg-luxury-silver/20 p-2 rounded-lg hover:bg-luxury-gold transition-colors duration-300 group"
+                className="bg-muted p-2 rounded-lg hover:bg-luxury-gold transition-colors duration-300 group"
                 aria-label="Facebook"
               >
-                <Facebook className="h-5 w-5 text-luxury-silver group-hover:text-white" />
+                <Facebook className="h-5 w-5 text-muted-foreground group-hover:text-white" />
               </a>
               <a 
                 href="#" 
-                className="bg-luxury-silver/20 p-2 rounded-lg hover:bg-luxury-gold transition-colors duration-300 group"
+                className="bg-muted p-2 rounded-lg hover:bg-luxury-gold transition-colors duration-300 group"
                 aria-label="Instagram"
               >
-                <Instagram className="h-5 w-5 text-luxury-silver group-hover:text-white" />
+                <Instagram className="h-5 w-5 text-muted-foreground group-hover:text-white" />
               </a>
               <a 
                 href="#" 
-                className="bg-luxury-silver/20 p-2 rounded-lg hover:bg-luxury-gold transition-colors duration-300 group"
+                className="bg-muted p-2 rounded-lg hover:bg-luxury-gold transition-colors duration-300 group"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-5 w-5 text-luxury-silver group-hover:text-white" />
+                <Linkedin className="h-5 w-5 text-muted-foreground group-hover:text-white" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold text-luxury-gold mb-6">Links Rápidos</h4>
+            <h4 className="text-lg font-bold text-luxury-gold mb-6 font-cardo">Links Rápidos</h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-gray-300 hover:text-luxury-gold transition-colors duration-300 flex items-center group"
+                    className="text-muted-foreground hover:text-luxury-gold transition-colors duration-300 flex items-center group"
                   >
                     <div className="w-1 h-1 bg-luxury-gold rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     {link.name}
@@ -122,13 +122,13 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-bold text-luxury-gold mb-6">Nossos Serviços</h4>
+            <h4 className="text-lg font-bold text-luxury-gold mb-6 font-cardo">Nossos Serviços</h4>
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
                   <a 
                     href="#services" 
-                    className="text-gray-300 hover:text-luxury-gold transition-colors duration-300 flex items-center group text-sm"
+                    className="text-muted-foreground hover:text-luxury-gold transition-colors duration-300 flex items-center group text-sm"
                   >
                     <div className="w-1 h-1 bg-luxury-gold rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     {service}
@@ -140,31 +140,31 @@ const Footer = () => {
 
           {/* Contact & Legal */}
           <div>
-            <h4 className="text-lg font-bold text-luxury-gold mb-6">Contato</h4>
+            <h4 className="text-lg font-bold text-luxury-gold mb-6 font-cardo">Contato</h4>
             
             {/* Contact Info */}
             <div className="space-y-4 mb-8">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-luxury-gold flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-gray-300">(61) 9337-6506</p>
-                  <p className="text-xs text-gray-400">Segunda a Sexta, 8h às 18h</p>
+                  <p className="text-sm text-foreground">(61) 9337-6506</p>
+                  <p className="text-xs text-muted-foreground">Segunda a Sexta, 8h às 18h</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-luxury-gold flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-gray-300">contato@werneck.com.br</p>
-                  <p className="text-xs text-gray-400">Resposta em até 2h</p>
+                  <p className="text-sm text-foreground">contato@werneck.com.br</p>
+                  <p className="text-xs text-muted-foreground">Resposta em até 2h</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-luxury-gold flex-shrink-0 mt-1" />
                 <div>
-                  <p className="text-sm text-gray-300">Av. Paulista, 1234</p>
-                  <p className="text-xs text-gray-400">Bela Vista, São Paulo - SP</p>
+                  <p className="text-sm text-foreground">Av. Paulista, 1234</p>
+                  <p className="text-xs text-muted-foreground">Bela Vista, São Paulo - SP</p>
                 </div>
               </div>
             </div>
@@ -177,7 +177,7 @@ const Footer = () => {
                   <li key={index}>
                     <a 
                       href="#" 
-                      className="text-xs text-gray-400 hover:text-luxury-gold transition-colors duration-300"
+                      className="text-xs text-muted-foreground hover:text-luxury-gold transition-colors duration-300"
                     >
                       {item}
                     </a>
@@ -190,22 +190,22 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-luxury-silver/20">
+      <div className="border-t border-border">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-center md:text-left">
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-muted-foreground">
                 © 2024 Werneck Contabilidade. Todos os direitos reservados.
               </p>
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="text-xs text-muted-foreground/70 mt-1">
                 CNPJ: 12.345.678/0001-90 | CRC: SP-123456/O-7
               </p>
             </div>
 
             {/* Certifications & Back to Top */}
             <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-4 text-xs text-gray-400">
+              <div className="flex items-center space-x-4 text-xs text-muted-foreground">
                 <span>FENACON</span>
                 <span>•</span>
                 <span>CRC/SP</span>

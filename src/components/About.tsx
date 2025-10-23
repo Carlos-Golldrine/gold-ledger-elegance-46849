@@ -63,7 +63,7 @@ const About = () => {
             <span className="text-sm font-medium text-luxury-gold">Sobre Nós</span>
           </div>
           
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-cardo">
             <span className="text-foreground">Conheça a</span>
             <span className="text-luxury-gold"> Werneck Contabilidade</span>
           </h2>
@@ -97,7 +97,7 @@ const About = () => {
         {/* Company Story */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="animate-fade-in">
-            <h3 className="text-3xl font-bold mb-6 text-foreground">
+            <h3 className="text-3xl font-bold mb-6 text-foreground font-cardo">
               Nossa <span className="text-luxury-gold">História</span>
             </h3>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -128,11 +128,11 @@ const About = () => {
           </div>
 
           <div className="relative animate-slide-up">
-            <div className="card-luxury p-8 bg-gradient-luxury">
-              <div className="text-center text-white">
+            <div className="card-luxury p-8 bg-card border-2 border-luxury-gold/30">
+              <div className="text-center">
                 <Award className="h-16 w-16 text-luxury-gold mx-auto mb-6" />
-                <h4 className="text-2xl font-bold mb-4">Certificações e Reconhecimentos</h4>
-                <div className="space-y-3 text-gray-300">
+                <h4 className="text-2xl font-bold mb-4 text-foreground font-cardo">Certificações e Reconhecimentos</h4>
+                <div className="space-y-3 text-muted-foreground">
                   <div className="flex items-center justify-center space-x-2">
                     <CheckCircle className="h-5 w-5 text-luxury-gold" />
                     <span>CRC - Conselho Regional de Contabilidade</span>
@@ -177,7 +177,7 @@ const About = () => {
         {/* Team Section */}
         <div className="animate-fade-in">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4">
+            <h3 className="text-3xl font-bold mb-4 font-cardo">
               <span className="text-foreground">Nossa</span>
               <span className="text-luxury-gold"> Equipe</span>
             </h3>

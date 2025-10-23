@@ -60,7 +60,7 @@ const Services = () => {
             <span className="text-sm font-medium text-luxury-gold">Nossos Serviços</span>
           </div>
           
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-cardo">
             <span className="text-foreground">Soluções</span>
             <span className="text-luxury-gold"> Contábeis</span>
             <br />
@@ -122,17 +122,17 @@ const Services = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16 animate-fade-in">
-          <div className="card-luxury p-8 bg-gradient-luxury">
+          <div className="card-luxury p-8 bg-card border-2 border-luxury-gold/30">
             <Shield className="h-12 w-12 text-luxury-gold mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-white mb-4">
+            <h3 className="text-2xl font-bold text-foreground mb-4 font-cardo">
               Precisa de uma solução personalizada?
             </h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Nossa equipe está pronta para desenvolver soluções contábeis sob medida 
               para as necessidades específicas da sua empresa.
             </p>
             <Button 
-              variant="luxury"
+              className="bg-luxury-silver hover:bg-luxury-silver-light text-foreground font-semibold shadow-silver"
               onClick={() => window.open('https://wa.me/5561933765060?text=Olá! Preciso de ajuda com serviços contábeis especializados.', '_blank')}
             >
               Fale com um Especialista

@@ -81,7 +81,7 @@ const Contact = () => {
             <span className="text-sm font-medium text-luxury-gold">Contato</span>
           </div>
           
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-cardo">
             <span className="text-foreground">Vamos Conversar</span>
             <br />
             <span className="text-luxury-gold">Sobre Seu Negócio</span>
@@ -102,7 +102,7 @@ const Contact = () => {
                   <Send className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">Formulário de Contato</h3>
+                  <h3 className="text-2xl font-bold text-foreground font-cardo">Formulário de Contato</h3>
                   <p className="text-muted-foreground">Preencha os campos abaixo e entraremos em contato</p>
                 </div>
               </div>
@@ -172,9 +172,8 @@ const Contact = () => {
 
                 <Button 
                   type="submit" 
-                  variant="luxury"
+                  className="w-full bg-luxury-silver hover:bg-luxury-silver-light text-foreground font-semibold shadow-silver"
                   size="lg"
-                  className="w-full"
                 >
                   <Send className="h-5 w-5 mr-2" />
                   Enviar Mensagem
@@ -187,7 +186,7 @@ const Contact = () => {
           <div className="space-y-8">
             {/* Contact Details */}
             <div className="card-luxury p-6 animate-slide-up">
-              <h4 className="text-xl font-bold mb-6 text-foreground">Informações de Contato</h4>
+              <h4 className="text-xl font-bold mb-6 text-foreground font-cardo">Informações de Contato</h4>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="group">
@@ -220,7 +219,7 @@ const Contact = () => {
                 <div className="bg-gradient-primary p-2 rounded-lg shadow-gold">
                   <Clock className="h-5 w-5 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-foreground">Horário de Atendimento</h4>
+                <h4 className="text-xl font-bold text-foreground font-cardo">Horário de Atendimento</h4>
               </div>
               
               <div className="space-y-3">
@@ -249,7 +248,7 @@ const Contact = () => {
                 <div className="bg-gradient-primary p-2 rounded-lg shadow-gold">
                   <Building className="h-5 w-5 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-foreground">Dados da Empresa</h4>
+                <h4 className="text-xl font-bold text-foreground font-cardo">Dados da Empresa</h4>
               </div>
               
               <div className="space-y-3 text-sm">
@@ -281,9 +280,9 @@ const Contact = () => {
         {/* Map Section */}
         <div className="mt-16 animate-fade-in">
           <div className="card-luxury overflow-hidden">
-            <div className="bg-gradient-luxury p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">Nossa Localização</h3>
-              <p className="text-gray-300">Venha nos visitar no coração de São Paulo</p>
+            <div className="bg-card border-b-2 border-luxury-gold/30 p-6">
+              <h3 className="text-2xl font-bold text-foreground mb-2 font-cardo">Nossa Localização</h3>
+              <p className="text-muted-foreground">Venha nos visitar no coração de São Paulo</p>
             </div>
             <div className="h-96 bg-muted flex items-center justify-center">
               <div className="text-center">
@@ -291,7 +290,8 @@ const Contact = () => {
                 <p className="text-muted-foreground">Mapa interativo do Google Maps</p>
                 <p className="text-sm text-muted-foreground">Av. Paulista, 1234 - Bela Vista, São Paulo</p>
                 <Button 
-                  variant="elegant"
+                  variant="outline"
+                  className="mt-4 border-2 border-luxury-silver hover:bg-luxury-silver/10"
                   onClick={() => window.open('https://maps.google.com', '_blank')}
                 >
                   Ver no Google Maps

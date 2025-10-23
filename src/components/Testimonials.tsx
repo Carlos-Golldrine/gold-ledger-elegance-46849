@@ -68,7 +68,7 @@ const Testimonials = () => {
             <span className="text-sm font-medium text-luxury-gold">Depoimentos</span>
           </div>
           
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-cardo">
             <span className="text-foreground">O que Nossos</span>
             <br />
             <span className="text-luxury-gold">Clientes Dizem</span>
@@ -131,7 +131,7 @@ const Testimonials = () => {
         {/* Client Logos Section */}
         <div className="animate-fade-in">
           <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold mb-4 text-foreground">
+            <h3 className="text-2xl font-bold mb-4 text-foreground font-cardo">
               Empresas que <span className="text-luxury-gold">Confiam</span> em Nós
             </h3>
             <p className="text-muted-foreground">
@@ -158,19 +158,19 @@ const Testimonials = () => {
         </div>
 
         {/* Statistics */}
-        <div className="mt-20 card-luxury p-8 bg-gradient-luxury text-center animate-fade-in">
+        <div className="mt-20 card-luxury p-8 bg-card border-2 border-luxury-gold/30 text-center animate-fade-in">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-4xl font-bold text-luxury-gold mb-2">98%</div>
-              <p className="text-white font-medium">Taxa de Satisfação</p>
+              <div className="text-4xl font-bold text-luxury-gold mb-2 font-cardo">98%</div>
+              <p className="text-foreground font-medium">Taxa de Satisfação</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-luxury-gold mb-2">500+</div>
-              <p className="text-white font-medium">Clientes Ativos</p>
+              <div className="text-4xl font-bold text-luxury-gold mb-2 font-cardo">500+</div>
+              <p className="text-foreground font-medium">Clientes Ativos</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-luxury-gold mb-2">15+</div>
-              <p className="text-white font-medium">Anos de Experiência</p>
+              <div className="text-4xl font-bold text-luxury-gold mb-2 font-cardo">15+</div>
+              <p className="text-foreground font-medium">Anos de Experiência</p>
             </div>
           </div>
         </div>
