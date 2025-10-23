@@ -112,8 +112,8 @@ const Hero = () => {
               </div>
 
               {/* Floating Elements */}
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center shadow-gold">
-                <span className="text-2xl font-bold text-white">15+</span>
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center shadow-gold">
+                <span className="text-lg font-bold text-white">15+</span>
               </div>
               
               <div className="absolute -bottom-4 -left-4 bg-card p-4 rounded-lg shadow-elegant border border-luxury-gold/20">
