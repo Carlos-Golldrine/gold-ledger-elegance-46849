@@ -74,24 +74,24 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Professional Image with 3D Extrusion Effect */}
-          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-end justify-end">
-            {/* Image Container */}
-            <div className="relative w-full h-full flex items-end justify-end" 
+          {/* Hero Logo with 3D Effect */}
+          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-center justify-center">
+            {/* Logo Container */}
+            <div className="relative w-full h-full flex items-center justify-center" 
                  style={{ 
                    perspective: '1000px',
                    transformStyle: 'preserve-3d'
                  }}>
-              {/* Professional Image */}
+              {/* Logo */}
               <div className="relative"
                    style={{
                      transform: 'translateZ(50px)',
                      transformStyle: 'preserve-3d'
                    }}>
                 <img 
-                  src={professionalImage} 
-                  alt="Profissional Werneck Contabilidade"
-                  className="w-full h-auto max-w-md lg:max-w-lg object-contain"
+                  src={heroLogo} 
+                  alt="Logo Werneck Contabilidade"
+                  className="w-full h-auto max-w-md lg:max-w-xl object-contain"
                   style={{
                     filter: 'drop-shadow(-10px 10px 20px rgba(0,0,0,0.3))'
                   }}
