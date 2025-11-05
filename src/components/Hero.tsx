@@ -1,6 +1,6 @@
 import { ArrowRight, Shield, TrendingUp, Users } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import heroLogo from '@/assets/hero-logo.svg'
+import heroLogo from '@/assets/hero-logo-new.svg'
 import professionalImage from '@/assets/professional.jpg'
 
 const Hero = () => {
