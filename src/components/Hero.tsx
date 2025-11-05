@@ -76,7 +76,7 @@ const Hero = () => {
 
           {/* Professional Image with 3D Extrusion Effect */}
           <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-end justify-end">
-            {/* Image Container with Mask */}
+            {/* Image Container */}
             <div className="relative w-full h-full flex items-end justify-end" 
                  style={{ 
                    perspective: '1000px',
@@ -93,8 +93,6 @@ const Hero = () => {
                   alt="Profissional Werneck Contabilidade"
                   className="w-full h-auto max-w-md lg:max-w-lg object-contain"
                   style={{
-                    maskImage: 'linear-gradient(to top, transparent 0%, black 15%, black 100%)',
-                    WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 15%, black 100%)',
                     filter: 'drop-shadow(-10px 10px 20px rgba(0,0,0,0.3))'
                   }}
                 />
