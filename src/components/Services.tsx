@@ -20,21 +20,21 @@ const Services = () => {
   const services = [
     {
       icon: <Building2 className="h-8 w-8" />,
-      title: "Contabilidade Empresarial",
+      title: "Contabilidade",
       description: "Gestão contábil completa para empresas de todos os portes, incluindo escrituração fiscal e demonstrações financeiras.",
       benefits: ["Relatórios gerenciais", "Controle fiscal", "Demonstrações contábeis", "Compliance regulatório"],
       image: serviceEmpresarial
     },
     {
       icon: <Calculator className="h-8 w-8" />,
-      title: "Consultoria Tributária",
+      title: "Departamento fiscal",
       description: "Otimização da carga tributária e orientação estratégica para redução legal de impostos.",
       benefits: ["Planejamento tributário", "Elisão fiscal", "Análise de enquadramento", "Consultoria especializada"],
       image: serviceTributaria
     },
     {
       icon: <FileText className="h-8 w-8" />,
-      title: "Abertura e Regularização",
+      title: "Abertura de empresa",
       description: "Abertura de empresas, alterações contratuais e regularização de situações fiscais pendentes.",
       benefits: ["Processo ágil", "Documentação completa", "Suporte jurídico", "Acompanhamento integral"],
       image: serviceAbertura
