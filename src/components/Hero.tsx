@@ -1,15 +1,15 @@
 import { ArrowRight, Shield, TrendingUp, Users } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import heroLogo from '@/assets/hero-logo-new.svg'
-import professionalImage from '@/assets/professional.jpg'
+import professionalImage from '@/assets/professional-hq.png'
 
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen bg-background relative overflow-hidden flex items-center">
-      <div className="container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4 py-12 lg:py-20">
         {/* Hero Card Container */}
         <div className="relative bg-card rounded-3xl border-2 border-luxury-gold/30 shadow-elegant overflow-hidden">
-          <div className="grid lg:grid-cols-2 gap-12 items-center p-8 lg:p-12 relative">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center p-6 sm:p-8 lg:p-12 relative">
           {/* Hero Content */}
           <div className="animate-fade-in">
             <div className="inline-flex items-center px-4 py-2 bg-luxury-gold/20 border border-luxury-gold/40 rounded-full mb-6">
@@ -17,7 +17,7 @@ const Hero = () => {
               <span className="text-sm font-medium text-luxury-gold">Há 15 anos no mercado</span>
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight font-cardo">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight font-cardo">
               <span className="text-foreground">Soluções</span>
               <br />
               <span className="text-luxury-gold">Contábeis</span>
@@ -25,38 +25,38 @@ const Hero = () => {
               <span className="text-foreground">de Excelência</span>
             </h1>
             
-            <p className="text-xl text-foreground mb-8 leading-relaxed font-medium">
+            <p className="text-base sm:text-lg lg:text-xl text-foreground mb-6 lg:mb-8 leading-relaxed font-medium">
               Oferecemos serviços contábeis premium com transparência, 
               confiabilidade e excelência para impulsionar o sucesso do seu negócio.
             </p>
 
             {/* Value Propositions */}
-            <div className="grid grid-cols-3 gap-6 mb-10">
+            <div className="grid grid-cols-3 gap-3 sm:gap-6 mb-8 lg:mb-10">
               <div className="text-center">
-                <div className="bg-luxury-gold/20 p-4 rounded-lg mb-3 inline-block">
-                  <Shield className="h-6 w-6 text-luxury-gold" />
+                <div className="bg-luxury-gold/20 p-3 sm:p-4 rounded-lg mb-2 inline-block">
+                  <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-luxury-gold" />
                 </div>
-                <p className="text-sm text-foreground font-semibold">Transparência</p>
+                <p className="text-xs sm:text-sm text-foreground font-semibold">Transparência</p>
               </div>
               <div className="text-center">
-                <div className="bg-luxury-gold/20 p-4 rounded-lg mb-3 inline-block">
-                  <TrendingUp className="h-6 w-6 text-luxury-gold" />
+                <div className="bg-luxury-gold/20 p-3 sm:p-4 rounded-lg mb-2 inline-block">
+                  <TrendingUp className="h-5 w-5 sm:h-6 sm:w-6 text-luxury-gold" />
                 </div>
-                <p className="text-sm text-foreground font-semibold">Excelência</p>
+                <p className="text-xs sm:text-sm text-foreground font-semibold">Excelência</p>
               </div>
               <div className="text-center">
-                <div className="bg-luxury-gold/20 p-4 rounded-lg mb-3 inline-block">
-                  <Users className="h-6 w-6 text-luxury-gold" />
+                <div className="bg-luxury-gold/20 p-3 sm:p-4 rounded-lg mb-2 inline-block">
+                  <Users className="h-5 w-5 sm:h-6 sm:w-6 text-luxury-gold" />
                 </div>
-                <p className="text-sm text-foreground font-semibold">Confiabilidade</p>
+                <p className="text-xs sm:text-sm text-foreground font-semibold">Confiabilidade</p>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button 
                 size="lg" 
-                className="bg-luxury-silver hover:bg-luxury-silver-light text-foreground font-semibold shadow-silver"
+                className="bg-luxury-gold hover:bg-luxury-gold/90 text-luxury-black font-semibold shadow-gold w-full sm:w-auto"
                 onClick={() => window.open('https://wa.me/5561993376506?text=Olá! Gostaria de solicitar um orçamento para serviços contábeis.', '_blank')}
               >
                 Solicitar Orçamento
@@ -66,7 +66,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-luxury-silver hover:bg-luxury-silver/10"
+                className="border-2 border-luxury-silver hover:bg-luxury-silver/10 w-full sm:w-auto"
                 onClick={() => window.open('https://wa.me/5561993376506?text=Olá! Tenho interesse em conhecer melhor os serviços da Werneck Contabilidade.', '_blank')}
               >
                 Fale Conosco
@@ -74,24 +74,24 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Hero Logo with 3D Effect */}
-          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-center justify-center">
-            {/* Logo Container */}
+          {/* Professional Image with 3D Effect */}
+          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-center justify-center mt-8 lg:mt-0">
+            {/* Image Container */}
             <div className="relative w-full h-full flex items-center justify-center" 
                  style={{ 
                    perspective: '1000px',
                    transformStyle: 'preserve-3d'
                  }}>
-              {/* Logo */}
+              {/* Professional Image */}
               <div className="relative"
                    style={{
                      transform: 'translateZ(50px)',
                      transformStyle: 'preserve-3d'
                    }}>
                 <img 
-                  src={heroLogo} 
-                  alt="Logo Werneck Contabilidade"
-                  className="w-full h-auto max-w-md lg:max-w-xl object-contain"
+                  src={professionalImage} 
+                  alt="Profissional Werneck Contabilidade"
+                  className="w-full h-auto max-w-xs sm:max-w-sm lg:max-w-lg object-contain"
                   style={{
                     filter: 'drop-shadow(-10px 10px 20px rgba(0,0,0,0.3))'
                   }}
