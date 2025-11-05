@@ -6,7 +6,7 @@ import professionalImage from '@/assets/professional-hq.svg'
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen bg-background relative overflow-hidden flex items-center">
-      <div className="container mx-auto px-4 py-12 lg:py-20">
+      <div className="container mx-auto px-4 pt-24 pb-12 lg:py-20">
         {/* Hero Card Container */}
         <div className="relative bg-card rounded-3xl border-2 border-luxury-gold/30 shadow-elegant overflow-hidden">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center p-6 sm:p-8 lg:p-12 relative">
