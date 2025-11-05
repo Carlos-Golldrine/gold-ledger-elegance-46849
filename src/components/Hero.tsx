@@ -1,6 +1,6 @@
 import { ArrowRight, Shield, TrendingUp, Users } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import heroImage from '@/assets/accounting-office-hero.jpg'
+import heroLogo from '@/assets/hero-logo.svg'
 
 const Hero = () => {
   return (
@@ -75,49 +75,34 @@ const Hero = () => {
           </div>
 
           {/* Hero Visual */}
-          <div className="relative animate-slide-up">
-            <div className="relative">
-              {/* Background Image */}
-              <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                <img 
-                  src={heroImage} 
-                  alt="Escritório moderno de contabilidade Werneck"
-                  className="w-full h-full object-cover opacity-20 dark:opacity-10"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
-              </div>
-
-              {/* Main Card */}
-              <div className="relative card-luxury p-8 bg-card/95 backdrop-blur-sm">
-                <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-2xl font-bold text-luxury-gold font-cardo">Nossos Serviços</h3>
-                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                    <TrendingUp className="h-6 w-6 text-white" />
-                  </div>
-                </div>
+          <div className="relative animate-slide-up flex items-center justify-center">
+            {/* 3D Logo with Depth Effect */}
+            <div className="relative group" style={{ perspective: '1000px' }}>
+              <div className="relative transition-transform duration-500 group-hover:scale-105" 
+                   style={{ 
+                     transformStyle: 'preserve-3d',
+                     transform: 'rotateY(-5deg) rotateX(5deg)'
+                   }}>
+                {/* Shadow layers for depth */}
+                <div className="absolute inset-0 blur-2xl opacity-50 bg-luxury-gold/30 rounded-2xl" 
+                     style={{ transform: 'translateZ(-50px)' }}></div>
+                <div className="absolute inset-0 blur-xl opacity-40 bg-luxury-gold/20 rounded-2xl" 
+                     style={{ transform: 'translateZ(-30px)' }}></div>
                 
-                <div className="space-y-4">
-                  {[
-                    'Contabilidade Empresarial',
-                    'Consultoria Tributária',
-                    'Abertura de Empresas',
-                    'Planejamento Financeiro'
-                  ].map((service, index) => (
-                    <div key={index} className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-colors">
-                      <div className="w-2 h-2 bg-luxury-gold rounded-full"></div>
-                      <span className="font-medium text-foreground">{service}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center shadow-gold">
-                <span className="text-lg font-bold text-white">15+</span>
-              </div>
-              
-              <div className="absolute -bottom-4 -left-4 bg-card p-4 rounded-lg shadow-elegant border border-luxury-gold/20">
-                <p className="text-sm font-medium text-luxury-gold">Anos de Experiência</p>
+                {/* Main Logo */}
+                <img 
+                  src={heroLogo} 
+                  alt="Logo Werneck Contabilidade"
+                  className="relative w-full h-auto max-w-md drop-shadow-2xl"
+                  style={{ 
+                    transform: 'translateZ(0px)',
+                    filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3)) drop-shadow(0 10px 20px rgba(212,175,55,0.2))'
+                  }}
+                />
+                
+                {/* Highlight effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-2xl pointer-events-none"
+                     style={{ transform: 'translateZ(10px)' }}></div>
               </div>
             </div>
           </div>
