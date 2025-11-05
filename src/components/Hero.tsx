@@ -80,25 +80,19 @@ const Hero = () => {
                      transformStyle: 'preserve-3d',
                      transform: 'rotateY(-5deg) rotateX(5deg)'
                    }}>
-                {/* Shadow layers for depth */}
-                <div className="absolute inset-0 blur-2xl opacity-50 bg-luxury-gold/30 rounded-2xl" 
-                     style={{ transform: 'translateZ(-50px)' }}></div>
-                <div className="absolute inset-0 blur-xl opacity-40 bg-luxury-gold/20 rounded-2xl" 
-                     style={{ transform: 'translateZ(-30px)' }}></div>
-                
                 {/* Main Logo */}
                 <img 
                   src={heroLogo} 
                   alt="Logo Werneck Contabilidade"
-                  className="relative w-full h-auto max-w-md drop-shadow-2xl"
+                  className="relative w-full h-auto max-w-2xl drop-shadow-2xl"
                   style={{ 
                     transform: 'translateZ(0px)',
-                    filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3)) drop-shadow(0 10px 20px rgba(212,175,55,0.2))'
+                    filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))'
                   }}
                 />
                 
                 {/* Highlight effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-2xl pointer-events-none"
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-2xl pointer-events-none"
                      style={{ transform: 'translateZ(10px)' }}></div>
               </div>
             </div>
