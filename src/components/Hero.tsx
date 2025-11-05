@@ -84,16 +84,13 @@ const Hero = () => {
                 <img 
                   src={heroLogo} 
                   alt="Logo Werneck Contabilidade"
-                  className="relative w-full h-auto max-w-2xl drop-shadow-2xl"
+                  className="relative w-full h-auto max-w-2xl"
                   style={{ 
                     transform: 'translateZ(0px)',
-                    filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))'
+                    background: 'transparent',
+                    mixBlendMode: 'normal'
                   }}
                 />
-                
-                {/* Highlight effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-2xl pointer-events-none"
-                     style={{ transform: 'translateZ(10px)' }}></div>
               </div>
             </div>
           </div>
