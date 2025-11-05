@@ -75,7 +75,7 @@ const Hero = () => {
           </div>
 
           {/* Professional Image with 3D Effect */}
-          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-center justify-center mt-8 lg:mt-0">
+          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-end lg:items-center justify-center mt-0 lg:mt-0">
             {/* Image Container */}
             <div className="relative w-full h-full flex items-center justify-center" 
                  style={{ 
