@@ -91,10 +91,10 @@ const Hero = () => {
                 <img 
                   src={professionalImage} 
                   alt="Profissional Werneck Contabilidade"
-                  className="w-full h-auto max-w-lg object-contain"
+                  className="w-full h-auto max-w-md lg:max-w-lg object-contain"
                   style={{
-                    maskImage: 'linear-gradient(to top, transparent 0%, black 30%, black 100%)',
-                    WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 30%, black 100%)',
+                    maskImage: 'linear-gradient(to top, transparent 0%, black 15%, black 100%)',
+                    WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 15%, black 100%)',
                     filter: 'drop-shadow(-10px 10px 20px rgba(0,0,0,0.3))'
                   }}
                 />
