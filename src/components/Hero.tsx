@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 pt-24 pb-12 lg:py-20">
         {/* Hero Card Container */}
         <div className="relative bg-card rounded-3xl border-2 border-luxury-gold/30 shadow-elegant overflow-hidden">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center p-6 sm:p-8 lg:p-12 relative">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center p-6 pb-0 sm:p-8 sm:pb-0 lg:p-12 relative">
           {/* Hero Content */}
           <div className="animate-fade-in">
             <div className="inline-flex items-center px-4 py-2 bg-luxury-gold/20 border border-luxury-gold/40 rounded-full mb-6">
@@ -75,9 +75,9 @@ const Hero = () => {
           </div>
 
           {/* Professional Image with 3D Effect */}
-          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-end lg:items-center justify-center mt-0 lg:mt-0">
+          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-end lg:items-center justify-center">
             {/* Image Container */}
-            <div className="relative w-full h-full flex items-center justify-center" 
+            <div className="relative w-full h-full flex items-end lg:items-center justify-center"
                  style={{ 
                    perspective: '1000px',
                    transformStyle: 'preserve-3d'
