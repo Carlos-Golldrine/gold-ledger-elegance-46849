@@ -74,38 +74,13 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Professional Image with 3D Effect */}
-          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-end lg:items-center justify-center">
-            {/* Image Container */}
-            <div className="relative w-full h-full flex items-end lg:items-center justify-center"
-                 style={{ 
-                   perspective: '1000px',
-                   transformStyle: 'preserve-3d'
-                 }}>
-              {/* Professional Image */}
-              <div className="relative"
-                   style={{
-                     transform: 'translateZ(50px)',
-                     transformStyle: 'preserve-3d'
-                   }}>
-                <img 
-                  src={professionalImage} 
-                  alt="Profissional Werneck Contabilidade"
-                  className="w-full h-auto max-w-xs sm:max-w-sm lg:max-w-lg object-contain"
-                  style={{
-                    filter: 'drop-shadow(-10px 10px 20px rgba(0,0,0,0.3))'
-                  }}
-                />
-              </div>
-              
-              {/* 3D Shadow Layer */}
-              <div className="absolute inset-0 -z-10"
-                   style={{
-                     transform: 'translateZ(-20px)',
-                     background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, transparent 70%)',
-                     filter: 'blur(20px)'
-                   }}></div>
-            </div>
+          {/* Professional Image */}
+          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-end justify-center">
+            <img 
+              src={professionalImage} 
+              alt="Profissional Werneck Contabilidade"
+              className="w-full h-auto max-w-xs sm:max-w-sm lg:max-w-lg object-contain"
+            />
           </div>
           </div>
         </div>
