@@ -1,12 +1,15 @@
 import { ArrowRight, Shield, TrendingUp, Users } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import heroLogo from '@/assets/hero-logo.svg'
+import professionalImage from '@/assets/professional.png'
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen bg-background relative overflow-hidden">
-      <div className="container mx-auto px-4 pt-32 pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section id="home" className="min-h-screen bg-background relative overflow-hidden flex items-center">
+      <div className="container mx-auto px-4 py-20">
+        {/* Hero Card Container */}
+        <div className="relative bg-card rounded-3xl border-2 border-luxury-gold/30 shadow-elegant overflow-hidden">
+          <div className="grid lg:grid-cols-2 gap-12 items-center p-8 lg:p-12 relative">
           {/* Hero Content */}
           <div className="animate-fade-in">
             <div className="inline-flex items-center px-4 py-2 bg-luxury-gold/20 border border-luxury-gold/40 rounded-full mb-6">
@@ -71,28 +74,41 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Hero Visual */}
-          <div className="relative animate-slide-up flex items-center justify-center">
-            {/* 3D Logo with Depth Effect */}
-            <div className="relative group" style={{ perspective: '1000px' }}>
-              <div className="relative transition-transform duration-500 group-hover:scale-105" 
-                   style={{ 
-                     transformStyle: 'preserve-3d',
-                     transform: 'rotateY(-5deg) rotateX(5deg)'
+          {/* Professional Image with 3D Extrusion Effect */}
+          <div className="relative lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-end justify-end">
+            {/* Image Container with Mask */}
+            <div className="relative w-full h-full flex items-end justify-end" 
+                 style={{ 
+                   perspective: '1000px',
+                   transformStyle: 'preserve-3d'
+                 }}>
+              {/* Professional Image */}
+              <div className="relative"
+                   style={{
+                     transform: 'translateZ(50px)',
+                     transformStyle: 'preserve-3d'
                    }}>
-                {/* Main Logo */}
                 <img 
-                  src={heroLogo} 
-                  alt="Logo Werneck Contabilidade"
-                  className="relative w-full h-auto max-w-2xl"
-                  style={{ 
-                    transform: 'translateZ(0px)',
-                    background: 'transparent',
-                    mixBlendMode: 'normal'
+                  src={professionalImage} 
+                  alt="Profissional Werneck Contabilidade"
+                  className="w-full h-auto max-w-lg object-contain"
+                  style={{
+                    maskImage: 'linear-gradient(to top, transparent 0%, black 30%, black 100%)',
+                    WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 30%, black 100%)',
+                    filter: 'drop-shadow(-10px 10px 20px rgba(0,0,0,0.3))'
                   }}
                 />
               </div>
+              
+              {/* 3D Shadow Layer */}
+              <div className="absolute inset-0 -z-10"
+                   style={{
+                     transform: 'translateZ(-20px)',
+                     background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, transparent 70%)',
+                     filter: 'blur(20px)'
+                   }}></div>
             </div>
+          </div>
           </div>
         </div>
       </div>
