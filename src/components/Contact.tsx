@@ -201,14 +201,6 @@ const Contact = () => {
                   <Send className="h-5 w-5 mr-2" />
                   {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
                 </Button>
-                
-                {/* Instruções para configurar Google Sheets */}
-                <div className="mt-4 p-4 bg-accent/50 rounded-lg border border-border">
-                  <p className="text-xs text-muted-foreground">
-                    ℹ️ Para receber mensagens na planilha, configure o Google Apps Script e substitua 
-                    a URL em <code className="text-luxury-gold">Contact.tsx</code> linha 27
-                  </p>
-                </div>
               </form>
             </div>
           </div>
