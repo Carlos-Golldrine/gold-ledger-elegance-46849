@@ -78,7 +78,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
                 <div>
                   <p className="text-sm text-foreground/80 font-medium">Certificado Digital</p>
-                  <p className="text-2xl font-bold text-luxury-gold">R$ 149,99</p>
+                  <p className="text-2xl font-bold text-luxury-gold">A partir de R$ 149,99</p>
                 </div>
                 <Button 
                   size="lg"
