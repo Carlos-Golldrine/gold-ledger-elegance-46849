@@ -22,13 +22,41 @@ const Contact = () => {
     message: ''
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // URL do Google Apps Script - substitua pela URL do seu Web App
+  const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE'
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Simulate form submission
-    setIsSubmitted(true)
-    setTimeout(() => setIsSubmitted(false), 3000)
-    setFormData({ name: '', email: '', phone: '', message: '' })
+    setIsSubmitting(true)
+
+    try {
+      // Enviar para Google Sheets via Apps Script
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          timestamp: new Date().toLocaleString('pt-BR')
+        })
+      })
+
+      setIsSubmitted(true)
+      setTimeout(() => setIsSubmitted(false), 3000)
+      setFormData({ name: '', email: '', phone: '', message: '' })
+    } catch (error) {
+      console.error('Erro ao enviar formulário:', error)
+      alert('Erro ao enviar mensagem. Por favor, tente novamente.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -166,12 +194,21 @@ const Contact = () => {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-luxury-silver hover:bg-luxury-silver-light text-foreground font-semibold shadow-silver"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-primary hover:opacity-90 text-white font-semibold shadow-gold"
                   size="lg"
                 >
                   <Send className="h-5 w-5 mr-2" />
-                  Enviar Mensagem
+                  {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
                 </Button>
+                
+                {/* Instruções para configurar Google Sheets */}
+                <div className="mt-4 p-4 bg-accent/50 rounded-lg border border-border">
+                  <p className="text-xs text-muted-foreground">
+                    ℹ️ Para receber mensagens na planilha, configure o Google Apps Script e substitua 
+                    a URL em <code className="text-luxury-gold">Contact.tsx</code> linha 27
+                  </p>
+                </div>
               </form>
             </div>
           </div>
