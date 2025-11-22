@@ -53,7 +53,7 @@ const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-4">
               <Button 
                 size="lg" 
                 className="bg-luxury-gold hover:bg-luxury-gold/90 text-luxury-black font-semibold shadow-gold w-full sm:w-auto"
@@ -71,6 +71,25 @@ const Hero = () => {
               >
                 Fale Conosco
               </Button>
+            </div>
+
+            {/* Certificado Digital CTA */}
+            <div className="bg-luxury-gold/10 border border-luxury-gold/30 rounded-xl p-4 backdrop-blur-sm">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+                <div>
+                  <p className="text-sm text-foreground/80 font-medium">Certificado Digital</p>
+                  <p className="text-2xl font-bold text-luxury-gold">R$ 149,99</p>
+                </div>
+                <Button 
+                  size="lg"
+                  variant="luxury"
+                  className="w-full sm:w-auto"
+                  onClick={() => window.open('https://wa.me/5561993376506?text=Olá! Tenho interesse em comprar o Certificado Digital', '_blank')}
+                >
+                  Adquirir Certificado Digital
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </div>
             </div>
           </div>
 
